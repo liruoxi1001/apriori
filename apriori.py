@@ -1,6 +1,7 @@
 import collections
 import csv
 from itertools import combinations
+import sys
 
 
 class Apriori:
@@ -136,9 +137,12 @@ def write(minSup, minConf, large_itemset, rules):
 
 
 if __name__ == "__main__":
-    baskets = read("INTEGRATED-DATASET.csv")
-    apriori = Apriori(baskets, 0.4, 0.99)
+    filename = sys.argv[1]
+    min_supp = float(sys.argv[2])
+    min_conf = float(sys.argv[3])
+    baskets = read(filename)
+    apriori = Apriori(baskets, min_supp, min_conf)
 
     apriori.run_apriori()
     apriori.find_association_rules()
-    write(0.4, 0.99, apriori.large_itemset, apriori.rules)
+    write(min_supp, min_conf, apriori.large_itemset, apriori.rules)
