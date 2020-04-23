@@ -1,0 +1,31 @@
+==Frequent itemsets (min_sup=40.0%)
+[('Whole Building',)], 99.157%
+[('Not Applicable: Standalone Property',)], 96.407%
+[('Not Applicable: Standalone Property', 'Whole Building')], 96.160%
+[('Multifamily Housing',)], 73.966%
+[('Multifamily Housing', 'Whole Building')], 73.548%
+[('Multifamily Housing', 'Not Applicable: Standalone Property')], 72.314%
+[('Multifamily Housing', 'Not Applicable: Standalone Property', 'Whole Building')], 72.101%
+[('Yes',)], 64.286%
+[('Whole Building', 'Yes')], 63.869%
+[('Not Applicable: Standalone Property', 'Yes')], 62.966%
+[('Not Applicable: Standalone Property', 'Whole Building', 'Yes')], 62.821%
+[('Multifamily Housing', 'Yes')], 49.455%
+[('Multifamily Housing', 'Whole Building', 'Yes')], 49.208%
+[('Multifamily Housing', 'Not Applicable: Standalone Property', 'Yes')], 48.697%
+[('Multifamily Housing', 'Not Applicable: Standalone Property', 'Whole Building', 'Yes')], 48.570%
+[('Manhattan',)], 44.066%
+[('Manhattan', 'Whole Building')], 43.777%
+[('Manhattan', 'Not Applicable: Standalone Property')], 42.781%
+[('Manhattan', 'Not Applicable: Standalone Property', 'Whole Building')], 42.746%
+
+==High-confidence association rules (min_conf=99.0%)
+[Not Applicable: Standalone Property] => [Whole Building] (Conf: 99.744%, Supp: 96.160%)
+[Multifamily Housing] => [Whole Building] (Conf: 99.436%, Supp: 73.548%)
+[Multifamily Housing, Not Applicable: Standalone Property] => [Whole Building] (Conf: 99.706%, Supp: 72.101%)
+[Yes] => [Whole Building] (Conf: 99.351%, Supp: 63.869%)
+[Not Applicable: Standalone Property, Yes] => [Whole Building] (Conf: 99.770%, Supp: 62.821%)
+[Multifamily Housing, Yes] => [Whole Building] (Conf: 99.501%, Supp: 49.208%)
+[Multifamily Housing, Not Applicable: Standalone Property, Yes] => [Whole Building] (Conf: 99.738%, Supp: 48.570%)
+[Manhattan] => [Whole Building] (Conf: 99.343%, Supp: 43.777%)
+[Manhattan, Not Applicable: Standalone Property] => [Whole Building] (Conf: 99.920%, Supp: 42.746%)
